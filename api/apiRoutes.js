@@ -17,4 +17,22 @@ router.post('/categories', (req, res, next) => {
     .catch(next)
 })
 
+router.delete('/categories/:id', (req, res, next) => {
+  Category.destroy({ where: { id: req.params.id } })
+    .then(() => res.sendStatus(204))
+    .catch(next)
+})
+
+router.post('/categories/:id', (req, res, next) => {
+  Product.add(req.params.id)
+    .then(product => res.send(product))
+    .catch(next)
+})
+
+router.delete('/products/:id', (req, res, next) => {
+  Product.destroy({ where: { id: req.params.id } })
+    .then(() => res.sendStatus(204))
+    .catch(next)
+})
+
 module.exports = router
