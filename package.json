@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "npm run webpack:dev & DATABASE_URL=postgresql://localhost/acme_products_categories_faker nodemon server.js --ignore './client' --ignore './dist'",
     "start": "node server.js",
-    "webpack:dev": "npm run webpack  --mode=development --watch",
+    "webpack:dev": "webpack --mode=development --watch",
     "webpack": "webpack"
   },
   "repository": {
