@@ -8,4 +8,5 @@ app.get('/', (req, res, next) => {
   Category.findAll({ include: [Product] }) 
     .then(data => res.send(data))
 })
+
 module.exports = app
