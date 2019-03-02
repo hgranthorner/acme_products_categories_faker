@@ -1,0 +1,29 @@
+{
+  "name": "acme_products_categories_faker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "DATABASE_URL=postgresql://localhost/acme_products_categories_faker nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hgranthorner/acme_products_categories_faker.git"
+  },
+  "keywords": [],
+  "author": "Grant Horner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hgranthorner/acme_products_categories_faker/issues"
+  },
+  "homepage": "https://github.com/hgranthorner/acme_products_categories_faker#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^7.8.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "sequelize": "^4.42.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
